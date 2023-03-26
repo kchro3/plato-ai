@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Chat App</title>
+    <link href="{{ url_for('static', path='/styles.css') }}" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+      <div class="sidebar">
+        <div class="friend-item">
+          <img class="profile-photo" src="https://via.placeholder.com/50">
+          <div>
+            <div class="friend-name">Friend 1</div>
+            <div class="last-message">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec sem quis mi ultrices blandit a vel quam.</div>
+          </div>
+        </div>
+        <div class="friend-item">
+          <img class="profile-photo" src="https://via.placeholder.com/50">
+          <div>
+            <div class="friend-name">Friend 2</div>
+            <div class="last-message">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec sem quis mi ultrices blandit a vel quam.</div>
+          </div>
+        </div>
+        <div class="friend-item">
+          <img class="profile-photo" src="https://via.placeholder.com/50">
+          <div>
+            <div class="friend-name">Friend 3</div>
+            <div class="last-message">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec sem quis mi ultrices blandit a vel quam.</div>
+          </div>
+        </div>
+      </div>
+      <div class="main">
+        <div class="message-container">
+          <div class="message-bubble friend-message">Hi, how are you doing?</div>
+          <div class="message-timestamp">3:00</div>
+        </div>
+        <div class="message-container">
+          <div class="message-bubble user-message">Good, how are you?</div>
+          <div class="message-timestamp">3:01</div>
+        </div>
+        <div class="input-bar">
+          <textarea class="message-input" placeholder="Type your message..."></textarea>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

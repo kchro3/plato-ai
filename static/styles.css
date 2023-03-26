@@ -1,0 +1,141 @@
+/* Layout */
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #333;
+  background-color: #fff;
+  margin: 0px;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 100%;
+  background-color: #fff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+
+.main {
+  position: relative;
+  margin-left: 250px;
+  padding: 20px;
+  overflow-y: scroll;
+  height: 100%;
+  width: calc(100% - 250px);
+  background-color: #f9f9f9;
+  z-index: 0;
+}
+
+/* Sidebar */
+.profile-photo {
+  border-radius: 50%;
+  display: block;
+  margin: auto;
+  max-width: 100%;
+}
+
+.profile-photo {
+  border-radius: 50%;
+  display: block;
+  margin: auto;
+  max-width: 100%;
+  margin-right: 10px;
+}
+
+.friend-item {
+  display: flex;
+  padding: 10px 20px;
+  border-bottom: 1px solid #ccc;
+}
+
+.friend-item:hover {
+  background-color: #ddd;
+}
+
+.friend-name {
+  font-weight: bold;
+  font-size: 16px;
+  color: #333;
+}
+
+.last-message {
+  width: 150px; /* set a fixed width */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap; /* ensure the text doesn't wrap */
+  color: #777;
+  font-size: 0.9rem;
+}
+
+/* Chat */
+.message-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.message-bubble {
+  padding: 12px 16px;
+  border-radius: 20px;
+  max-width: 80%;
+  word-wrap: break-word;
+  line-height: 1.4;
+}
+
+.user-message {
+  background-color: #007aff;
+  color: #fff;
+  align-self: flex-end;
+  margin-bottom: 2px;
+  margin-right: 10px;
+}
+
+.friend-message {
+  background-color: #e5e5ea;
+  color: #000;
+  align-self: flex-start;
+  margin-bottom: 2px;
+  margin-left: 10px;
+}
+
+.message-timestamp {
+  font-size: 12px;
+  margin-top: 5px;
+  color: #aaa;
+  text-align: right;
+}
+
+/* Input Bar */
+.input-bar {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  padding: 10px;
+  box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.1);
+}
+
+.input-bar textarea {
+  border: none;
+  font-size: 16px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  width: 100%;
+  height: auto;
+  resize: none;
+  padding: 8px;
+  border-radius: 20px;
+  box-shadow: 0 0 0 1px #ccc;
+  margin-right: 10px;
+}
+
+.input-bar textarea:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #2979ff;
+}
